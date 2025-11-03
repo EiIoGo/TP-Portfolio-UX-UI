@@ -4,7 +4,7 @@ export default function EialHomePage() {
       {/* Hero Section with Background Image */}
       <section className="relative -m-6 mb-0">
         <div className="relative w-full">
-          <img src="/images/homebg.png" alt="background" className="w-full h-auto rounded-t-2xl"/>
+          <img src="/images/Eial/homebg.png" alt="background" className="w-full h-auto rounded-t-2xl"/>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <h1 className="text-white text-center leading-none mb-2" style={{ fontFamily: 'Fascinate Inline', fontSize: '40px' }}> EIAL IONATAN GOLDMAN </h1>
             <p className="text-white text-center" style={{ fontFamily: 'Farro', fontSize: '23px' }}>Estudiante de desarrollador de software</p>
@@ -17,7 +17,7 @@ export default function EialHomePage() {
         <div className="flex justify-between items-center">
           <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>acerca_de_mi</h1>
         </div>
-        <img src="/images/cursor.png" alt="cursor" className="absolute -top-24 right-2 w-64 h-64" />
+        <img src="/images/Eial/cursor.png" alt="cursor" className="absolute -top-24 right-2 w-64 h-64" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
           <div className="text-base ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
@@ -35,7 +35,7 @@ export default function EialHomePage() {
             coordinar equipos, gestionar tiempos y mantener la<br/>
             motivación del grupo siempre activa —como un <span style={{ color: '#C586C0' }}>while</span><br/>
             (<span style={{ color: '#DCDCAA' }}>creatividad</span> <span style={{ color: '#CE9172' }}>&gt;</span> <span style={{ color: '#B5CEA8' }}>0</span>) que nunca se detiene.
-            <img src="/images/terminal.png" alt="terminal" className="absolute right-0 top-12 w-40 h-40" />
+            <img src="/images/Eial/terminal.png" alt="terminal" className="absolute -right-6 top-12 w-40 h-40" />
           </div>
           <div className="text-5xl ml-12" style={{ fontFamily: 'Inria Serif' }}>&#125;</div>
         </div>
@@ -44,15 +44,15 @@ export default function EialHomePage() {
       {/* Photo + laptop icon */}
       <section className="relative flex items-center">
         <div className="w-50 h-40 bg-teal-800 flex items-center justify-center overflow-hidden ml-20 mt-6">
-          <img src="/images/photo.png" alt="photo" className="object-cover w-full h-full" />
+          <img src="/images/Eial/photo.png" alt="photo" className="object-cover w-full h-full" />
         </div>
-        <img src="/images/laptop.png" alt="laptop" className="absolute -top-8 right-28 w-50 h-40" />
+        <img src="/images/Eial/laptop.png" alt="laptop" className="absolute -top-8 right-28 w-50 h-40" />
       </section>
       
       {/* Education */}
       <section className="relative mt-16">
         <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>educacion</h1>
-        <img src="/images/dinosaur.png" alt="dinosaur" className="absolute right-40 -top-28 w-48 h-48" />
+        <img src="/images/Eial/dinosaur.png" alt="dinosaur" className="absolute right-40 -top-28 w-48 h-48" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
           <div className="text-2xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
@@ -65,8 +65,8 @@ export default function EialHomePage() {
           </div>
           <div className="text-5xl ml-12" style={{ fontFamily: 'Inria Serif' }}>&#125;</div>
         </div>
-        <img src="/images/ort.png" alt="ort" className="absolute left-24 top-60 h-24" />
-        <img src="/images/unsam.png" alt="unsam" className="absolute right-28 top-60 h-24" />
+        <img src="/images/Eial/ort.png" alt="ort" className="absolute left-24 top-60 h-24" />
+        <img src="/images/Eial/unsam.png" alt="unsam" className="absolute right-28 top-60 h-24" />
       </section>
 
       {/* Skills */}
@@ -93,7 +93,7 @@ export default function EialHomePage() {
       {/* Experience (simple) */}
       <section className="relative mt-16">
         <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>experiencia</h1>
-        <img src="/images/vscode.png" alt="vscode" className="absolute right-40 -top-8 w-28 h-28" />
+        <img src="/images/Eial/vscode.png" alt="vscode" className="absolute right-40 -top-8 w-28 h-28" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
           <div className="text-xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
@@ -114,8 +114,8 @@ export default function EialHomePage() {
       {/* Contact & icons row */}
       <section className="relative mt-20">
         <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>informacion_contacto</h1>
-        <img src="/images/github.png" alt="github" className="absolute right-72 -top-28 w-28 h-28" />
-        <img src="/images/unity.png" alt="unity" className="absolute right-28 -top-32 w-28 h-28" />
+        <img src="/images/Eial/github.png" alt="github" className="absolute right-72 -top-28 w-28 h-28" />
+        <img src="/images/Eial/unity.png" alt="unity" className="absolute right-28 -top-32 w-28 h-28" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
           <div className="text-xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
