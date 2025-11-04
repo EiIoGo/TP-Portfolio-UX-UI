@@ -2,7 +2,7 @@
 
 export default function HomePage() {
   return (
-    <div style={{ backgroundColor: 'black', minHeight: '100vh', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ backgroundColor: 'black', minHeight: '100vh', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="overflow-y-auto hide-scrollbar">
       <button
         onClick={() => window.location.href = '/eial'}
         className="mr-4 px-4 py-2 bg-teal-600 text-white"
@@ -10,7 +10,7 @@ export default function HomePage() {
         Eial
       </button>
       <button
-        onClick={() => window.location.href = '/miriam'}
+        onClick={() => window.location.href = '/miriam/home'}
         className="px-4 py-2 bg-teal-600 text-white"
       >
         Miriam
