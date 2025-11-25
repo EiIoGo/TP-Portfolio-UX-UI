@@ -1,14 +1,129 @@
+'use client';
+import { useState, useEffect } from 'react';
+
 export default function EialHomePage() {
+  const [loading, setLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
+
+
+  useEffect(() => {
+    if (!loading) return;
+
+    const duration = 1000; // tiempo total deseado en ms
+    const tick = 50; // frecuencia de actualización
+    const startTime = Date.now();
+
+    const intervalId = setInterval(() => {
+      setProgress(prev => {
+        if (prev >= 100) {
+          clearInterval(intervalId);
+          return 100;
+        }
+
+        const elapsed = Date.now() - startTime;
+        const remainingTime = Math.max(duration - elapsed, 0);
+        const remainingProgress = Math.max(100 - prev, 0);
+
+        const ticksLeft = Math.max(Math.ceil(remainingTime / tick), 1);
+        const maxIncrement = Math.max((remainingProgress / ticksLeft) * 1.6, 2);
+        const minIncrement = Math.max(maxIncrement / 3, 0.5);
+        const randomIncrement = minIncrement + Math.random() * (maxIncrement - minIncrement);
+        const nextProgress = Math.min(prev + randomIncrement, 100);
+
+        if (nextProgress >= 100 || elapsed >= duration) {
+          clearInterval(intervalId);
+          setTimeout(() => setLoading(false), 400);
+          return 100;
+        }
+
+        return nextProgress;
+      });
+    }, tick);
+
+    return () => clearInterval(intervalId);
+  }, [loading]);
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex items-center justify-center" style={{ backgroundColor: '#184349' }}>
+        <div className="relative inline-block">
+          {/* Imagen de fondo de la pantalla de carga sin barra */}
+          <img 
+            src="/images/eial/loading-background.png" 
+            alt="loading screen" 
+            className="max-w-full max-h-screen"
+          />
+          
+          {/* Contenedor del progreso y el borde */}
+          <div
+            className="absolute"
+            style={{
+              width: '62%',
+              height: '6.5%',
+              left: '19%',
+              top: '46%'
+            }}
+          >
+            <div className="relative h-full w-full overflow-hidden rounded-sm">
+              <div 
+                className="h-full transition-all duration-300 ease-out"
+                style={{ 
+                  width: `${progress}%`,
+                  height: '100%',
+                  background: 'linear-gradient(90deg, #4DD4E8 0%, #3BA5C8 100%)',
+                  boxShadow: '0 0 8px rgba(77, 212, 232, 0.5)',
+                  borderRadius: '6px'
+                }}
+              />
+            </div>
+
+            {/* Borde superior para cubrir el exceso de la barra */}
+            <img
+              src="/images/eial/loading-border.png"
+              alt="loading border"
+              className="pointer-events-none absolute inset-0 w-full h-full"
+              style={{
+                transform: `translate(0%, 11%) scale(1.09, 2.5)`,
+                transformOrigin: 'center',
+                zIndex: 5
+              }}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full max-w-2xl rounded-2xl shadow-2xl p-6" style={{ backgroundColor: '#061E20' }}>
+    <div className="w-full max-w-2xl shadow-2xl p-6 pt-0" style={{ backgroundColor: '#061E20', transform: 'scale(1.36)', transformOrigin: 'top center' }}>
       {/* Hero Section with Background Image */}
       <section className="relative -m-6 mb-0">
         <div className="relative w-full">
-          <img src="/images/eial/homebg.png" alt="background" className="w-full h-auto rounded-t-2xl"/>
+          <img src="/images/eial/homebg.png" alt="background" className="w-full h-auto"/>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <h1 className="text-white text-center leading-none mb-2" style={{ fontFamily: 'Fascinate Inline', fontSize: '40px' }}> EIAL IONATAN GOLDMAN </h1>
             <p className="text-white text-center" style={{ fontFamily: 'Farro', fontSize: '23px' }}>Estudiante de desarrollador de software</p>
           </div>
+        </div>
+      </section>
+
+      {/* Insert: Are you ready? composite */}
+      <section className="relative w-full overflow-hidden" aria-label="intro pregunta">
+        <div className="relative w-full flex justify-center">
+          {/* Fondo */}
+          <img
+            src="/images/eial/hero-insert-bg.png"
+            alt="fondo degradado"
+            className="w-[130%] max-w-none h-auto"
+            style={{ maxHeight: '220px', objectFit: 'cover', transform: 'translateX(-15%)' }}
+          />
+          {/* Texto superpuesto */}
+          <img
+            src="/images/eial/hero-insert-text.png"
+            alt="Are you ready?"
+            className="absolute top-1/2 left-1/2"
+            style={{ transform: 'translate(-50%, -50%) scale(1.18)', maxHeight: '180px', objectFit: 'contain', filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.6))' }}
+          />
         </div>
       </section>
 
