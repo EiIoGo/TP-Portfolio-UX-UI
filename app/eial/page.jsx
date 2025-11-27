@@ -135,33 +135,53 @@ export default function EialHomePage() {
         <img src="/images/eial/cursor.png" alt="cursor" className="absolute -top-24 right-2 w-64 h-64" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
-          <div className="text-base ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Fira Code' }}>
-            Apasionado por los videojuegos y por codear<br/>
-            mundos desde cero.<br/>
-            <br/>
-            Mi <span style={{ color: '#569CCA' }}>main function()</span> combina creatividad, organización<br/>
-            y unas cuantas líneas de <span style={{ color: '#506A2F' }}>debugging</span>.<br/>
-            <br/>
-            Amo programar videojuegos, diseñar mecánicas y<br/>
-            ver cómo una simple variable puede cambiar toda<br/>
-            una experiencia.<br/>
-            <br/>
-            He liderado varios proyectos donde aprendí a<br/>
-            coordinar equipos, gestionar tiempos y mantener la<br/>
-            motivación del grupo siempre activa —como un <span style={{ color: '#C586C0' }}>while</span><br/>
-            (<span style={{ color: '#DCDCAA' }}>creatividad</span> <span style={{ color: '#CE9172' }}>&gt;</span> <span style={{ color: '#B5CEA8' }}>0</span>) que nunca se detiene.
-            <img src="/images/eial/terminal.png" alt="terminal" className="absolute -right-6 top-12 w-40 h-40" />
+          <div className="grid grid-cols-2 gap-4 ml-12 my-2">
+            {/* Left column - stacked text blocks */}
+            <div>
+              <div className="text-xl whitespace-pre-line relative leading-tight" style={{ fontFamily: 'Fira Code' }}>
+                Apasionado por los<br/>
+                <span style={{ color: '#C89534' }}>videojuegos</span> y por<br/>
+                codear mundos<br/>
+                desde cero.<br/>
+                <br/>
+              </div>
+
+              <div className="text-xl whitespace-pre-line relative leading-tight mt-4" style={{ fontFamily: 'Fira Code' }}>
+                He liderado varios proyectos donde<br/>
+                aprendí a coordinar <span style={{ color: '#35FF66' }}>equipos</span>,<br/>
+                gestionar tiempos y mantener la<br/>
+                motivación del grupo siempre activa<br/>
+                —como un <span style={{ color: '#C586C0' }}>while</span>(<span style={{ color: '#DCDCAA' }}>creatividad</span> <span style={{ color: '#CE9172' }}>&gt;</span> <span style={{ color: '#B5CEA8' }}>0</span>) que<br/>
+                nunca se detiene.
+                <div className="absolute -bottom-4 -left-8">
+                  <img src="/images/eial/laptop.png" alt="laptop" className="w-32 h-32 object-contain" />
+                </div>
+              </div>
+
+              {/* separate main function block placed below the other text so it can get its own ml */}
+              <div className="text-xl whitespace-pre-line relative leading-tight mt-6 ml-16" style={{ fontFamily: 'Fira Code' }}>
+                Mi <span style={{ color: '#569CCA' }}>main function()</span><br/>
+                combina creatividad,<br/>
+                organización y unas<br/>
+                cuantas líneas de<br/>
+                <span style={{ color: '#506A2F' }}>debugging</span>.<br/>
+              </div>
+            </div>
+
+            {/* Right column - Icons and Photo */}
+            <div className="relative">
+              <div className="absolute -top-6 -left-32">
+                <img src="/images/eial/terminal.png" alt="terminal" className="w-32 h-32 object-contain" />
+              </div>
+              <div className="mt-16 ml-8">
+                <div className="w-48 h-56 bg-gray-700 flex items-center justify-center overflow-hidden">
+                  <img src="/images/eial/photo.png" alt="foto" className="object-cover w-full h-full" />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="text-5xl ml-12" style={{ fontFamily: 'Inria Serif' }}>&#125;</div>
         </div>
-      </section>
-
-      {/* Photo + laptop icon */}
-      <section className="relative flex items-center">
-        <div className="w-50 h-40 bg-teal-800 flex items-center justify-center overflow-hidden ml-20 mt-6">
-          <img src="/images/eial/photo.png" alt="photo" className="object-cover w-full h-full" />
-        </div>
-        <img src="/images/eial/laptop.png" alt="laptop" className="absolute -top-8 right-28 w-50 h-40" />
       </section>
       
       {/* Education */}
