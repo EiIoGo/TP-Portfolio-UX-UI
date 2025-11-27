@@ -7,7 +7,7 @@ export default function EialHomePage() {
           <img src="/images/eial/homebg.png" alt="background" className="w-full h-auto rounded-t-2xl"/>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <h1 className="text-white text-center leading-none mb-2" style={{ fontFamily: 'Fascinate Inline', fontSize: '40px' }}> EIAL IONATAN GOLDMAN </h1>
-            <p className="text-white text-center" style={{ fontFamily: 'Farro', fontSize: '23px' }}>Estudiante de desarrollador de software</p>
+            <p className="text-white text-center" style={{ fontFamily: 'Fira Code', fontSize: '23px' }}>Estudiante de desarrollador de software</p>
           </div>
         </div>
       </section>
@@ -15,12 +15,12 @@ export default function EialHomePage() {
       {/* About / Title */}
       <section className="relative mt-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>acerca_de_mi</h1>
+          <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Fira Code' }}>acerca_de_mi</h1>
         </div>
         <img src="/images/eial/cursor.png" alt="cursor" className="absolute -top-24 right-2 w-64 h-64" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
-          <div className="text-base ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
+          <div className="text-base ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Fira Code' }}>
             Apasionado por los videojuegos y por codear<br/>
             mundos desde cero.<br/>
             <br/>
@@ -51,12 +51,12 @@ export default function EialHomePage() {
       
       {/* Education */}
       <section className="relative mt-16">
-        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>educacion</h1>
+        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Fira Code' }}>educacion</h1>
         <img src="/images/eial/dinosaur.png" alt="dinosaur" className="absolute right-40 -top-28 w-48 h-48" />
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
-          <div className="text-2xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
-            <span style={{ color: '#35FF66', fontFamily: 'Farro' }}>
+          <div className="text-2xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Fira Code' }}>
+            <span style={{ color: '#35FF66', fontFamily: 'Fira Code' }}>
               <span style={{ color: '#CE9172' }}>"</span>2021<span style={{ color: '#FFFFFF' }}>-</span>2025<span style={{ color: '#CE9172' }}>"</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>"</span>ORT Argentina <span style={{ color: '#FFFFFF' }}>-</span> Técnico en<br/>
               Programación<span style={{ color: '#CE9172' }}>"</span>,<br/>
               <span style={{ color: '#CE9172' }}>"</span>2026<span style={{ color: '#FFFFFF' }}>-</span>actualidad<span style={{ color: '#CE9172' }}>"</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>"</span>UNSAM <span style={{ color: '#FFFFFF' }}>-</span> Licenciatura en<br/>
@@ -70,56 +70,69 @@ export default function EialHomePage() {
       </section>
 
       {/* Skills */}
-      <section className="mt-28">
-        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>habilidades</h1>
+      <section className="relative mt-28">
+        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Fira Code' }}>habilidades</h1>
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
-        <div className="mt-3 ml-20">
+        <div className="mt-3">
           <div className="flex justify-center gap-6 mb-3">
             {["HTML","JavaScript","Python","C++"].map((s) => {
               const isShort = s.length <= 3;
-              return <span key={s} className={`py-1 text-black text-xl font-semibold ${isShort ? 'px-6' : 'px-4'}`} style={{ backgroundColor: '#35FF66', border: '2px solid #164A26', fontFamily: 'Fredoka' }}>{s}</span>;
+              return <span key={s} className={`py-1 text-black text-xl ${isShort ? 'px-4' : 'px-2'}`} style={{ backgroundColor: '#35FF66', border: '2px solid #164A26', fontFamily: 'Fredoka' }}>{s}</span>;
             })}
           </div>
           <div className="flex justify-center gap-10">
             {["SQL","CSS","C#"].map((s) => {
               const isShort = s.length <= 3;
-              return <span key={s} className={`py-1 text-black text-xl font-semibold ${isShort ? 'px-6' : 'px-4'}`} style={{ backgroundColor: '#35FF66', border: '2px solid #164A26', fontFamily: 'Fredoka' }}>{s}</span>;
+              return <span key={s} className={`py-1 text-black text-xl ${isShort ? 'px-6' : 'px-4'}`} style={{ backgroundColor: '#35FF66', border: '2px solid #164A26', fontFamily: 'Fredoka' }}>{s}</span>;
             })}
           </div>
         </div>
         <div className="text-5xl ml-12" style={{ fontFamily: 'Inria Serif' }}>&#125;</div>
+        <img src="/images/eial/vscode.png" alt="vscode" className="absolute right-32 top-0 w-20 h-20" />
+        <img src="/images/eial/github.png" alt="github" className="absolute right-0 top-20 w-20 h-20" />
+        <img src="/images/eial/unity.png" alt="unity" className="absolute right-16 top-52 w-20 h-20" />
       </section>
 
       {/* Experience (simple) */}
       <section className="relative mt-16">
-        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>experiencia</h1>
-        <img src="/images/eial/vscode.png" alt="vscode" className="absolute right-40 -top-8 w-28 h-28" />
-        <div className="mt-2 font-mono">
+        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Fira Code' }}>experiencia</h1>
+        <div className="mt-2 font-mono relative">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
-          <div className="text-xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
-            <span style={{ color: '#35FF66', fontFamily: 'Farro' }}>
-              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2023</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> "BuzzAdmin"<span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span><br/>
-              <span style={{ color: '#FFFFFF' }}>{'['}</span>"GitHub"<span style={{ color: '#FFFFFF' }}>,</span> "VS Code"<span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> "Back-End" <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
-              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2024</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> "Ticarde"<span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'['}</span>"VS Code"<span style={{ color: '#FFFFFF' }}>,<br/>
-                </span> "Unity"<span style={{ color: '#FFFFFF' }}>,</span> "GitHub"<span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> "Desarrollador de videojuegos 3D"<br/>
-                <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
-              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2025</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> "BuzzCon"<span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'['}</span>"GitHub"<span style={{ color: '#FFFFFF' }}>,<br/>
-                </span> "VS Code"<span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> "Back-End" <span style={{ color: '#FFFFFF' }}>{'}'}</span>
-            </span>
+          <div className="text-xl ml-20 my-2 relative leading-tight" style={{ fontFamily: 'Fira Code', color: '#35FF66' }}>
+            <div className="whitespace-pre-line">
+              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2023</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span><br/>
+              <span style={{ color: '#CE9172' }}>&quot;BuzzAdmin&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span>
+              <br />
+              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,<br/>
+                </span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Back-End&quot;</span> <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span>
+            </div>
+            <div className="whitespace-pre-line mt-6 md:ml-56 ml-16">
+              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2024</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Ticarde&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span>
+              <br />
+              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;Unity&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Desarrollador de videojuegos 3D&quot;</span>
+              <br />
+              <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span>
+            </div>
+            <div className="whitespace-pre-line mt-6">
+              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2025</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;BuzzCon&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span>
+              <br />
+              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Back-End&quot;</span> <span style={{ color: '#FFFFFF' }}>{'}'}</span>
+            </div>
           </div>
           <div className="text-5xl ml-12" style={{ fontFamily: 'Inria Serif' }}>&#125;</div>
+          <img src="/images/eial/buzzadmin.png" alt="abeja BuzzAdmin" className="absolute -top-4 right-10 w-24 h-24" />
+          <img src="/images/eial/ticarde.png" alt="logo Ticarde" className="absolute left-24 top-32 w-32 h-32" />
+          <img src="/images/eial/buzzcon.png" alt="abeja BuzzCon" className="absolute right-4 bottom-0 w-28 h-28" />
         </div>
       </section>
 
       {/* Contact & icons row */}
       <section className="relative mt-20">
-        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Farro' }}>informacion_contacto</h1>
-        <img src="/images/eial/github.png" alt="github" className="absolute right-72 -top-28 w-28 h-28" />
-        <img src="/images/eial/unity.png" alt="unity" className="absolute right-28 -top-32 w-28 h-28" />
+        <h1 className="text-5xl ml-8 font-mono" style={{ fontFamily: 'Fira Code' }}>informacion_contacto</h1>
         <div className="mt-2 font-mono">
           <div className="text-5xl" style={{ fontFamily: 'Inria Serif' }}>= &#123;</div>
-          <div className="text-xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Farro' }}>
-            <span style={{ color: '#35FF66', fontFamily: 'Farro' }}>
+          <div className="text-xl ml-20 my-2 whitespace-pre-line relative leading-none" style={{ fontFamily: 'Fira Code' }}>
+            <span style={{ color: '#35FF66', fontFamily: 'Fira Code' }}>
               <span style={{ color: '#FFFFFF' }}>"</span>telefono<span style={{ color: '#FFFFFF' }}>":</span> <span style={{ color: '#FFFFFF' }}>"</span>+54 9 11 5668 - 5143<span style={{ color: '#FFFFFF' }}>"</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
               <span style={{ color: '#FFFFFF' }}>"</span>mail<span style={{ color: '#FFFFFF' }}>":</span> <span style={{ color: '#FFFFFF' }}>"</span>eialgoldman@gmail.com<span style={{ color: '#FFFFFF' }}>"</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
               <span style={{ color: '#FFFFFF' }}>"</span>ubicacion<span style={{ color: '#FFFFFF' }}>":</span> <span style={{ color: '#FFFFFF' }}>"</span>Ciudad Autónoma de Buenos Aires<span style={{ color: '#FFFFFF' }}>"</span>
