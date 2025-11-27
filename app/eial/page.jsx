@@ -216,28 +216,31 @@ export default function EialHomePage() {
           <div className="text-xl ml-20 my-2 relative leading-tight" style={{ fontFamily: 'Fira Code', color: '#35FF66' }}>
             <div className="whitespace-pre-line">
               {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2023</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span><br/>
-              <span style={{ color: '#CE9172' }}>&quot;BuzzAdmin&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span>
-              <br />
-              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,<br/>
-                </span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Back-End&quot;</span> <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span>
+              <span style={{ color: '#CE9172' }}>&quot;BuzzAdmin&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span><br />
+              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
+              "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Back-End&quot;</span> <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span>
             </div>
             <div className="whitespace-pre-line mt-6 md:ml-56 ml-16">
-              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2024</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Ticarde&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span>
-              <br />
-              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;Unity&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Desarrollador de videojuegos 3D&quot;</span>
-              <br />
+              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2024</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span><br/>
+              <span style={{ color: '#CE9172' }}>&quot;Ticarde&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span><br/>
+              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;Unity&quot;</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
+              <span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span><br/>
+              <span style={{ color: '#CE9172' }}>&quot;Desarrollador de videojuegos<br/>
+               3D&quot;</span>
               <span style={{ color: '#FFFFFF' }}>{'}'}</span><span style={{ color: '#FFFFFF' }}>,</span>
             </div>
             <div className="whitespace-pre-line mt-6">
-              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2025</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;BuzzCon&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> "herramientas"<span style={{ color: '#FFFFFF' }}>:</span>
-              <br />
-              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span> "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Back-End&quot;</span> <span style={{ color: '#FFFFFF' }}>{'}'}</span>
+              {'\u00A0\u00A0\u00A0\u00A0'}<span style={{ color: '#C586C0' }}>2025</span><span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#FFFFFF' }}>{'{'}</span> "proyecto"<span style={{ color: '#FFFFFF' }}>:</span><br/>
+              <span style={{ color: '#CE9172' }}>&quot;BuzzCon&quot;</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
+              "herramientas"<span style={{ color: '#FFFFFF' }}>:</span><br/>
+              <span style={{ color: '#FFFFFF' }}>{'['}</span><span style={{ color: '#CE9172' }}>&quot;GitHub&quot;</span><span style={{ color: '#FFFFFF' }}>,</span> <span style={{ color: '#CE9172' }}>&quot;VS Code&quot;</span><span style={{ color: '#FFFFFF' }}>{']'}</span><span style={{ color: '#FFFFFF' }}>,</span><br/>
+              "rol"<span style={{ color: '#FFFFFF' }}>:</span> <span style={{ color: '#CE9172' }}>&quot;Back-End&quot;</span> <span style={{ color: '#FFFFFF' }}>{'}'}</span>
             </div>
           </div>
           <div className="text-5xl ml-12" style={{ fontFamily: 'Inria Serif' }}>&#125;</div>
-          <img src="/images/eial/buzzadmin.png" alt="abeja BuzzAdmin" className="absolute -top-4 right-10 w-24 h-24" />
-          <img src="/images/eial/ticarde.png" alt="logo Ticarde" className="absolute left-24 top-32 w-32 h-32" />
-          <img src="/images/eial/buzzcon.png" alt="abeja BuzzCon" className="absolute right-4 bottom-0 w-28 h-28" />
+          <img src="/images/eial/buzzadmin.png" alt="abeja BuzzAdmin" className="absolute top-16 right-40 w-24 h-24" />
+          <img src="/images/eial/ticarde.png" alt="logo Ticarde" className="absolute left-24 top-52 w-32 h-32" />
+          <img src="/images/eial/buzzcon.png" alt="abeja BuzzCon" className="absolute right-40 bottom-16 w-28 h-28" />
         </div>
       </section>
 
