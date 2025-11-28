@@ -1,8 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Para exportar como sitio estático si lo necesitas
+  output: 'export',
   images: {
-    unoptimized: true, // Necesario si usas output: 'export'
+    unoptimized: true,
   },
 }
 

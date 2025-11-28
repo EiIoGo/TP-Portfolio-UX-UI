@@ -1,6 +1,11 @@
 export default function EialLayout({ children }) {
   return (
-    <div style={{ backgroundColor: '#184349', minHeight: '100vh' }} className="overflow-y-auto hide-scrollbar">
+    <div className="relative min-h-screen">
+      <div
+        className="fixed inset-0 -z-10"
+        aria-hidden="true"
+        style={{ backgroundColor: '#184349' }}
+      />
       <div className="min-h-screen flex items-center justify-center p-6">
         {children}
       </div>

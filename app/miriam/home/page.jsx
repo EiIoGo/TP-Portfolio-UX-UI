@@ -14,13 +14,13 @@ export default function MiriamHomePage() {
         <p className="text-xl font-inria-serif text-yellow-600 mb-8 text-center transform -translate-y-32">ESTUDIANTE DE ABOGACIA (UBA)</p>
         <div className="relative w-full flex items-end justify-center mb-0 transform -translate-y-20">
           <div className="hidden md:block absolute bottom-0 left-0 w-44 h-44">
-            <Image src="/images/miriam/book.png" alt="Book" fill className="object-contain object-bottom" />
+            <Image src="/images/miriam/home/book.png" alt="Book" fill className="object-contain object-bottom" />
           </div>
           <div className="relative w-64 h-80 flex-shrink-0 mb-0">
-            <Image src="/images/miriam/photo.png" alt="Miriam Iael Schulklapper" fill className="object-contain object-bottom" priority />
+            <Image src="/images/miriam/home/photo.png" alt="Miriam Iael Schulklapper" fill className="object-contain object-bottom" priority />
           </div>
           <div className="hidden md:block absolute bottom-0 right-0 w-44 h-44">
-            <Image src="/images/miriam/statue.png" alt="Statue" fill className="object-contain object-bottom" />
+            <Image src="/images/miriam/home/statue.png" alt="Statue" fill className="object-contain object-bottom" />
           </div>
         </div>
       </div>
